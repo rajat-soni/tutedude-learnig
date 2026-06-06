@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop trending fashion, electronics, gadgets, home essentials and daily deals online at JugaadKart with affordable prices and fast delivery across India."
+    />
+    <title>Jugad Kart – Trending Products at Jugaadu Prices</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://example.com/fontawesome/js/all.js"
+      data-auto-add-css="true"
+    ></script>
+  </head>
+  <body>
+     <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+
+                <!-- logo-section -->
+
+                <div class="logo">
+                    <img src="Logo/logo.png" alt="JugaadKart logo" class="logo-image">
+                </div>
+
+                <!-- Hamburger Menu section -->
+                <button class="menu-btn" id = "menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- menu section-->
+
+                <div class="menu-container">
+                    <ul class="menu-items">
+                        <li class="menu-links">
+                            <a   href="index.html">Home</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="product.html">Product</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="cart.html">Cart</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="payment.html">Payments</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT SIDE -->
+
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                       
+                    
+                        <input type="text" placeholder="Search item here...">
+                    </div>
+
+                    <div class="cart-section">
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping icons"></i>
+                            
+                          
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+
+                    <div class="user-profile-1">
+                        <i class="fa-solid fa-user icons"></i>
+                        
+                    </div>
+                </div>
+               </nav>
+            </div>
+        </header>
+    <main>
+      <!--  payment section start -->
+      <section class="payments">
+        <div class="container">
+          <div class="payment-content-actions">
+            <div class="left">
+              <div class="payment-title">
+                <p>Checkout</p>
+              </div>
+
+              <h3 class="checkout-heading">Contact detials</h3>
+              <form action="">
+              <div class="input-mail">
+                <label for="email">Email ID</label>
+                <input
+                  type="email"
+                  placeholder="enter email"
+                  id="email"
+                  class="email-text"
+                />
+              </div>
+              <div class="payment-block">
+                <h4>Payment</h4>
+              </div>
+              <div class="border-form">
+                <div class="checkout-actions">
+                  <div class="first">
+                    <i class="fa-solid fa-credit-card icon"></i>
+                    <p class="icon-text">Card</p>
+                  </div>
+
+                  <div class="first">
+                    <i class="fa-brands fa-bitcoin icon"></i>
+                    <p class="icon-text">Crypto</p>
+                  </div>
+                  <div class="first">
+                    <i class="fa-brands fa-cc-visa icon"></i>
+                    <p class="icon-text">Visa</p>
+                  </div>
+                  <div class="first">
+                    <i class="fa-solid fa-building-columns icon"></i>
+                    <p class="icon-text">Bank</p>
+                  </div>
+                </div>
+                <div class="input-text-seciton">
+                  <div class="card-number">
+                    <label for="card-number">Card number</label>
+                  </div>
+                  <div class="card-text">
+                    <input
+                      type="text"
+                      placeholder="Enter you card number.."
+                      class="card-text-number"
+                    />
+                  </div>
+                </div>
+                <div class="multi-text">
+                  <div class="input-row-seciton">
+                    <div class="card-number">
+                      <label for="card-number">Expiry</label>
+                    </div>
+                    <div class="card-text-1">
+                      <input
+                        type="text"
+                        placeholder="Enter you card number.."
+                        class="card-text-number-1"
+                      />
+                    </div>
+                  </div>
+                  <div class="input-row-seciton">
+                    <div class="card-number">
+                      <label for="card-number">CVC</label>
+                    </div>
+                    <div class="card-text-2">
+                      <input
+                        type="text"
+                        placeholder="Enter you cvc number.."
+                        class="card-text-number-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="multi-text">
+                  <div class="input-row-seciton">
+                    <div class="card-number">
+                      <label for="card-number">Country</label>
+                    </div>
+                    <div class="card-text-1">
+                      <select class="card-text-number-1">
+                        <option value="01">India</option>
+                      </select>
+                      <!-- <input type = "text" placeholder="Enter you card number.." class="card-text-number-1"> -->
+                    </div>
+                  </div>
+                  <div class="input-row-seciton">
+                    <div class="card-number">
+                      <label for="zip-number">Zip Code</label>
+                    </div>
+                    <div class="card-text-2">
+                      <input
+                        type="Number"
+                        placeholder="Enter you zip code.."
+                        class="card-text-number-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </form>
+            </div>
+            <div class="right">
+              <div class="order-summary">
+                <h3 class="checkout-heading-1">Order Summary</h3>
+              </div>
+              <div class="cart-container">
+                <div class="cart-box-container">
+                  <div class="box-border">
+                    <div class="left-text-box">
+                      <div class="label-box">
+                        <label for="coupan-code">Enter coupan code</label>
+                      </div>
+                      <div class="input-text-box">
+                        <input
+                          type="text"
+                          class="input-box"
+                          id="coupan-box"
+                          placeholder="Coupan code"
+                        />
+                        <p>Sub total</p>
+                        <p>GST (if applicable)</p>
+                        <p>Discount</p>
+                        <p><strong>Total</strong></p>
+                      </div>
+                    </div>
+                    <div class="button-box">
+                      <button type="text" class="button-box-button">
+                        Apply to coupan
+                      </button>
+                      <p>20,00</p>
+                      <p>199</p>
+                      <p>10%</p>
+                      <p><strong>₹ 1500</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-icons">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-apple-pay"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

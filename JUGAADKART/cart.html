@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop trending fashion, electronics, gadgets, home essentials and daily deals online at JugaadKart with affordable prices and fast delivery across India."
+    />
+    <title>Jugad Kart – Trending Products at Jugaadu Prices</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://example.com/fontawesome/js/all.js"
+      data-auto-add-css="true"
+    ></script>
+  </head>
+  <body>
+      <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+
+                <!-- logo-section -->
+
+                <div class="logo">
+                    <img src="Logo/logo.png" alt="JugaadKart logo" class="logo-image">
+                </div>
+
+                <!-- Hamburger Menu section -->
+                <button class="menu-btn" id = "menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- menu section-->
+
+                <div class="menu-container">
+                    <ul class="menu-items">
+                        <li class="menu-links">
+                            <a   href="index.html">Home</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="product.html">Product</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="cart.html">Cart</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="payment.html">Payments</a>
+                        </li>
+
+                        <li class="menu-links">
+                            <a  href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT SIDE -->
+
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                       
+                    
+                        <input type="text" placeholder="Search item here...">
+                    </div>
+
+                    <div class="cart-section">
+                        <a href="#">
+                            <i class="fa-solid fa-basket-shopping icons"></i>
+                            
+                          
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+
+                    <div class="user-profile-1">
+                        <i class="fa-solid fa-user icons"></i>
+                        
+                    </div>
+                </div>
+               </nav>
+            </div>
+        </header>
+    <main>
+      <!-- shopping cart section start -->
+
+      <section class="cart-main-section">
+        <div class="container">
+          <div class="cart-title-heading">
+            <h3>Shopping cart</h3>
+          </div>
+          <div class="cart-content-actions">
+            <div class="table">
+              <table class="product-table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>White Nike Shoes by Jugaad Kart</td>
+                    <td>
+                      <select>
+                        <option value="1">1</option>
+                      </select>
+                    </td>
+                    <td>₹1,299</td>
+                    <td>
+                      <i class="fa-solid fa-trash-can-arrow-up remove-icon"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Black Nike Shoes by Jugaad Kart</td>
+                    <td>
+                      <select>
+                        <option value="1">1</option>
+                      </select>
+                    </td>
+                    <td>₹1,399</td>
+                    <td>
+                      <i class="fa-solid fa-trash-can-arrow-up remove-icon"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Running Sneakers by Jugaad Kart</td>
+                    <td>
+                      <select>
+                        <option value="1">1</option>
+                      </select>
+                    </td>
+                    <td>₹2,499</td>
+                    <td>
+                      <i class="fa-solid fa-trash-can-arrow-up remove-icon"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="cart-actions">
+              <div class="cart-coup-code-seciton">
+                <div class="cart-manager">
+                  <div class="cupan-input-type">
+                    <label for="coupan-code" class="coupan"
+                      >Add your coupan</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="add your coupan code.."
+                      class="coupan-txt"
+                      id="coupan-code"
+                      placeholder=""
+                    />
+
+                    <div class="coupan-discount-text">
+                      <p>Sub total</p>
+                      <p>taxes(if applicable)</p>
+                      <p>Discount</p>
+                      <strong>Total</strong>
+                    </div>
+                  </div>
+                  <div class="coupan-btn">
+                    <button type="text" class="coupan-btn">Apply Coupan</button>
+                    <div class="coupan-btn-text-content">
+                      <p>₹ 1,2450</p>
+                      <p>10%</p>
+                      <p>₹ 2,545</p>
+                      <strong>30,23</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout">
+                <a href="payment.html" class="checkout-btn">PayNow at 30,24</a>
+              </div>
+              <div class="payment-icons">
+                <i class="fa-brands fa-amazon-pay"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-apple-pay"></i>
+              </div>
+            </div>
+          </div>
+          <div class="continue-shopping">
+            <i class="fa-solid fa-angles-left"></i>
+            <a href="payment.html">Continue Shopping</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
