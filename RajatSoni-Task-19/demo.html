@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const products = [
+  {
+    id: 1,
+    name: "Dry Cleaning",
+    price: 500,
+    image: "dry.jpg"
+  },
+  {
+    id: 2,
+    name: "Washing",
+    price: 300,
+    image: "wash.jpg"
+  },
+  {
+    id: 3,
+    name: "Ironing",
+    price: 200,
+    image: "iron.jpg"
+  }
+];
+
+let cart = [];
+
+function addProduct(id) {
+
+    const product = products.find(item => item.id === id);
+
+    cart.push(product);
+
+    renderCart();
+}
+
+function removeProduct(id) {
+
+    cart = cart.filter(item => item.id !== id);
+
+    renderCart();
+}
+
+const amountShow = document.querySelector(".amount-show");
+const totalElement = document.getElementById("total");
+
+function renderCart() {
+
+    amountShow.innerHTML = "";
+
+    let total = 0;
+
+    cart.forEach(product => {
+
+        total += product.price;
+
+        amountShow.innerHTML += `
+            <div class="product-row">
+
+                <div class="image-box">
+                    <img src="${product.image}" width="80">
+                </div>
+
+                <div class="name-box">
+                    ${product.name}
+                </div>
+
+                <div class="price-box">
+                    ₹${product.price}
+                </div>
+
+                <button onclick="removeProduct(${product.id})">
+                    Remove
+                </button>
+
+            </div>
+        `;
+    });
+
+    totalElement.textContent = total;
+}
+    </script>
+</head>
+<body>
+
+    <div class="amount-show"></div>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+
+<button onclick="addProduct(1)">Add Dry Cleaning</button>
+<button onclick="addProduct(2)">Add Washing</button>
+<button onclick="addProduct(3)">Add Ironing</button>
+    
+</body>
+</html>

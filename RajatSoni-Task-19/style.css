@@ -1,0 +1,270 @@
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: aliceblue;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    max-width:100%;
+    /* height: 100vh; */
+    padding:0px 20px;
+    margin:20px 20px;
+}
+.header {
+    position:fixed;
+    top: 0px;
+    left:0px;
+    right:0px;
+    z-index: 0.1;
+    
+}
+
+.nav-control {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
+    padding:20px 20px;
+   
+    
+}
+.navbar {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    cursor:pointer;
+}
+
+.user-name {
+  align-items: center;
+  padding:15px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.heading {
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.container-section-div {
+    display:flex;
+    flex-direction: row;
+    gap:25px;
+    margin-top:40px;
+}
+
+.left-div {
+
+flex: 1;
+}
+
+.content  {
+    padding:20px 10px;
+
+    background-color: #fff;
+    width:100%;
+    text-align: center;
+}
+
+.text-div {
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+    background-color:#EBEBEB;
+   padding:20px 40px;
+}
+.total-amount-show {
+    display:flex;
+    justify-content: space-between;
+    margin-top:50px;
+    background-color: #ffff;
+    border-top:1px solid black;
+    padding:20px 10px;
+}
+.amount-show {
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
+    gap:10px;
+  }
+
+  p{
+    font-size:14px;
+  }
+  .form-div {
+  margin: 38px 0px;
+  padding: 25px 20px;
+  background-color: #fff;
+  
+  }
+
+  .form-input {
+    display:Flex;
+    flex-direction: column;
+    gap:5px;
+    margin:25px 0px;
+  }
+  
+  .name-input {
+    /* margin-top:20px; */
+  }
+  .input-name {
+    width:100%;
+    border-radius: 5px;
+    height: 40px;
+     border:1px solid lightgray
+    
+  }
+
+  .form-row {
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+  }
+  .form-direction {
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+
+  }
+  .email-text {
+    border-radius: 5px;
+    width:100%;
+    height:40px;
+    border:1px solid lightgray
+  }
+
+   .password-text {
+    width:100%; 
+    height:40px;
+    border-radius: 5px;
+    border:1px solid lightgray
+  }
+  .button {
+    margin-top:25px;
+    display:grid;
+    
+  }
+  .btn {
+    padding:15px 0px;
+    border-radius: 5px;
+    background-color: #66CDAA;
+    border:1px solid lightgray;
+      cursor: pointer;
+  }
+
+
+
+  .right-div {
+flex:1;
+}
+  .text-content {
+    padding: 20px 50px;
+  }
+  .text-para {
+   
+    font-size:14px;
+    line-height: 1.6;
+    padding-top:20px;
+  }
+
+  .service-section {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:  row;
+    padding:0px 50px;
+    margin-top:40px;
+}
+
+.service-button {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:0px 50px;
+    margin-top:50px;
+      cursor: pointer;
+}
+
+.skip-btn {
+     padding:15px 30px;
+     background-color: #8ae5ff;
+     cursor: pointer;
+       border-radius: 10px;
+    border: none;
+}
+.add-btn {
+    padding:15px 20px;
+    background-color: #66CDAA;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+.image-div {
+  padding:0px 50px;
+}
+.image-product {
+   width:100%;
+    /* max-width:540px; */
+    height:310px;
+    object-fit:cover;
+    border-radius:15px;
+    object-position: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0,0.2);
+    transition: 0.3s;
+    
+
+}
+.image-product:hover {
+
+transform: scale(1.05);
+}
+
+.totalCount {
+   font-weight: 600;
+   font-size: 15px;
+}
+
+.show-amount {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.service {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+#error-msg {
+  color:red;
+  margin-top:10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.form-sucs-msg {
+  color:green;
+  font-size: 15px;
+  margin-top:5px;
+  text-align: right;
+
+}
+.error_msg {
+  font-size: 14px;
+  color:red;
+}
