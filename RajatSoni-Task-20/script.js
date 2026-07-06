@@ -238,7 +238,7 @@ function sendEmail() {
 
         errorMsgEmail.innerHTML = "";
         
-         formContainer.reset();
+        //  formContainer.reset();
 
     })
 
