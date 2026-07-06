@@ -198,9 +198,6 @@ form.addEventListener("click", function(e){
 
 });
 
-
-
-
 function sendEmail() {
     emailjs.send(
         "service_4jlvpaj",
