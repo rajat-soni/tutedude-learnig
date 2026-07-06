@@ -35,7 +35,10 @@ formBtn = document.querySelector(".button-email");
 
 function showCartData(idx, btn) {
   // let itemIdex =   cartArray.indexOf(idx)
+  console.log("data",btn);
+  return;
   let item = cartArray[idx];
+
   // console.log(item, idx);
 
   if (!item.isadded) {
@@ -44,24 +47,18 @@ function showCartData(idx, btn) {
     item.isadded = true;
     btn.innerHTML= "<div class='icon'>remove item <i class='fa fa-minus-circle' style='font-size:14px;'></i></div>";
     btn.style.backgroundColor = "red";
-    btn.style.color = "white";
+    btn.style.color = "black";
     
   } else {
 
      item.isadded = false;
-    // let temp = [];
-    // for (let i = 0; i < newArray.length; i++) {
-     
-    //   if (newArray[i] !== item) temp.push(newArray[i]);
-    // }
-    // newArray = temp;
     newArray = newArray.filter(
         cartItem => cartItem !== item
     );
 
     btn.innerHTML = " <div class='icon-1'>Add Item <i class='fa fa-plus-circle' style='font-size:14px;'></i> </div>";
      btn.style.backgroundColor = "#73c2fb";
-    btn.style.color = "white";
+    btn.style.color = "black";
   }
 
   updatedData();
@@ -156,10 +153,13 @@ buttonClick.addEventListener("click", function () {
     let total = 0;
 
     newArray.forEach(function(item){
+      
+      console.log(item.service, item.price);
         services += `${item.service} - ₹${item.price}\n`;
         total += item.price;
+        return;
     });
-
+    
     emailjs.send(
         "service_4jlvpaj",
         "template_mmkq76t",      // <-- New Template ID
@@ -170,6 +170,7 @@ buttonClick.addEventListener("click", function () {
             services: services,
             total: total
         }
+        
     )
 
     .then(function () {
