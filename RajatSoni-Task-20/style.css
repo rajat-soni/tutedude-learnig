@@ -26,6 +26,7 @@ body {
   /* height: 100vh; */
   padding: 0px 20px;
   margin: 20px 20px;
+   animation: 1.5s slidUp ease-in-out;
 }
 .header {
   position: static;
@@ -584,6 +585,7 @@ padding: 8px 4px;
 .container{
     margin:10px;
     padding:0 15px;
+     animation: 1s slidUp ease;
 }
 
 .section-container,
@@ -592,6 +594,7 @@ padding: 8px 4px;
 .news-container,
 .footer-container{
     flex-direction:column;
+     animation: 1s slidUp ease;
 }
 
 .left-div,
@@ -603,24 +606,29 @@ padding: 8px 4px;
 .footer-box{
     width:100%;
     padding:20px;
+     animation: 1s slidUp ease;
 }
 
 .hero-image{
     width:100%;
     height:auto;
+     animation: 1s slidUp ease;
 }
 
 .heading-text{
     font-size:35px;
+     animation: 1s slidUp ease;
 }
 
 .cartContainer{
     padding-right:20px;
+     animation: 1s slidUp ease;
 }
 
 .div-cart-left h2,
 .div-cart-left p{
     padding-left:20px;
+     animation: 1s slidUp ease;
 }
 
 .achivement-content{
@@ -648,6 +656,7 @@ padding: 8px 4px;
 
 .header{
     padding:15px 0;
+     animation: 1s slidUp ease;
 }
 
 .nav-container{
@@ -667,6 +676,7 @@ padding: 8px 4px;
 
 .section-container{
     flex-direction:column-reverse;
+     animation: 1s slidUp ease;
 }
 
 .left-div{
@@ -681,6 +691,7 @@ padding: 8px 4px;
 .heading-text{
     font-size:28px;
     text-align:center;
+     animation: 1s slidUp ease;
 }
 
 .para{
@@ -690,6 +701,7 @@ padding: 8px 4px;
 
 .button-div{
     align-items:center;
+     animation: 1s slidUp ease;
 }
 
 .btn{
@@ -699,6 +711,7 @@ padding: 8px 4px;
 .achivement-content{
     flex-direction:column;
     text-align:center;
+     animation: 1s slidUp ease;
 }
 
 .box{
@@ -707,6 +720,7 @@ padding: 8px 4px;
 
 .cart-container{
     flex-direction:column;
+     animation: 1s slidUp ease;
 }
 
 .div-cart{
@@ -716,10 +730,12 @@ padding: 8px 4px;
 .div-cart-left h2,
 .div-cart-left p{
     padding-left:20px;
+     animation: 1s slidUp ease;
 }
 
 .cartContainer{
     padding:20px;
+     animation: 1s slidUp ease;
 }
 
 .service-card{
@@ -749,6 +765,7 @@ padding: 8px 4px;
 .email,
 .fullname{
     width:100%;
+     animation: 1s slidUp ease;
 }
 
 .button-email{
@@ -757,6 +774,7 @@ padding: 8px 4px;
 
 .serivce-div{
     flex-direction:column;
+     animation: 1s slidUp ease;
 }
 
 .service-box{
@@ -802,6 +820,7 @@ padding: 8px 4px;
 
 .heading-text{
     font-size:24px;
+     animation: 1s slidUp ease;
 }
 
 .logo h1{
@@ -814,6 +833,7 @@ padding: 8px 4px;
 
 .div-cart h2{
     font-size:22px;
+     animation: 1s slidUp ease;
 }
 
 .box1 h2{
@@ -824,12 +844,14 @@ padding: 8px 4px;
 .totalCount{
     grid-template-columns:35px 1fr 60px;
     font-size:12px;
+     animation: 1s slidUp ease;
 }
 
 .btn,
 .button-email,
 .new-button{
     font-size:15px;
+     animation: 1s slidUp ease;
 }
 
 }

@@ -147,13 +147,48 @@ function validation () {
   
 }
 
-buttonClick.addEventListener("click", function (){
+buttonClick.addEventListener("click", function () {
 
-if(validation()) {
-  sucessMsg.textContent = "Data submited sucessfully!"
-}
+    if (!validation()) return;
 
-})
+    // Selected Services
+    let services = "";
+    let total = 0;
+
+    newArray.forEach(function(item){
+        services += `${item.service} - ₹${item.price}\n`;
+        total += item.price;
+    });
+
+    emailjs.send(
+        "service_4jlvpaj",
+        "template_mmkq76t",      // <-- New Template ID
+        {
+            name: name.value,
+            email: emailid.value,
+            phone: phone.value,
+            services: services,
+            total: total
+        }
+    )
+
+    .then(function () {
+
+        sucessMsg.textContent = "Booking submitted successfully!";
+        errorMsg.textContent = "";
+
+    })
+
+    .catch(function (error) {
+
+        console.log(error);
+        errorMsg.textContent = "Booking failed!";
+
+    });
+
+});
+
+
 
 emailjs.init({
     publicKey:"TZS4x_XJ5bbWaxkTw"
@@ -164,7 +199,7 @@ let fName = document.querySelector(".fullname-txt");
 let emailId = document.querySelector(".email-txt");
 let successMsgEmail = document.querySelector(".success-msg-email");
 let errorMsgEmail = document.querySelector(".errorMsg-email");
-let formContainer  = document.querySelector(".form-data");
+// let formContainer  = document.querySelector(".form-data");
 
 
 //email vaidation // 

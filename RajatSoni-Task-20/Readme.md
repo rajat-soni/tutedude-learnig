@@ -1,30 +1,19 @@
-**Task No-19 Laundry Booking service application**
+# laundry Service website Task Number 20
+*A responsive laundry service website built **HTML CSS,JavaScript, EmailJS**
 
-  * This project is simple Laundry Serivce Booking Application built using HTML,CSS, Java Script.
-  
-  * User can browser the Laundry Services add services to their cart,a view the total and skip the services.
-  * User can validate the booking form with basic validation.
+*This projects allows users to select launddry services, calclulate the total amount,book services and subscribe.
 
-**Application flow**
-
-*User views availaable laundry services.
-*User clicks Add Product to select a service.
-*Selected services appear in the booking list.
-*Total amount updated automatically.
-*Validation checks required all fields.
-*Success and errror message displayed Accordenly.
+# Features
+- Responsive Design (Desktop, Tablet & Mobile)
+- Add/Remove Laundry Services
+- Automatic Total price Calculation
+- Booking Form Validation
+- Newsletter Subscription
+- EmailJS Intergration
+- Success & Error  Message
+- Clean UI Design
 
 
-**Java Script Concepts Used**
-
-*Array of objects.
-*DOM manipulation.
-*Event Listners.
-*Functions.
-*Condinal Statments.
-*Form validation.
-*Array Iteration using forEach()
-*Teaplate Literals
 
 
 
