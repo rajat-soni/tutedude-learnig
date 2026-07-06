@@ -171,6 +171,7 @@ let errorMsgEmail = document.querySelector(".errorMsg-email");
 let formContainer  = document.querySelector(".form-data");
 
 
+//email vaidation // 
 function validationEmail(){
 
     if(fName.value.trim() === ""){
