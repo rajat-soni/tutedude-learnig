@@ -155,10 +155,6 @@ if(validation()) {
 
 })
 
-//email vaidation //
-
-
-
 emailjs.init({
     publicKey:"TZS4x_XJ5bbWaxkTw"
 });
@@ -206,28 +202,13 @@ form.addEventListener("click", function(e){
 
 
 function sendEmail() {
-
-  // if(!validationEmail()) {return; }
-    // const servicesList = newArray
-    //     .map(item => item.service)
-    //     .join(", ");
-
-    // let total = 0;
-
-    // newArray.forEach(item => {
-    //     total += item.price;
-    // });
-
     emailjs.send(
         "service_4jlvpaj",
         "template_hizxb4z",
         {
             name: fName.value,
             email: emailId.value
-            // phone: phone.value
-            // services: servicesList,
-            // total: total
-        }
+     }
     )
 
     .then(function (response) {
@@ -238,9 +219,6 @@ function sendEmail() {
             "Thank You For Booking the Service.<br>We will get back to you soon!";
 
         errorMsgEmail.innerHTML = "";
-        
-        //  formContainer.reset();
-
     })
 
     .catch(function (error) {
@@ -251,7 +229,4 @@ function sendEmail() {
 
 
     });
-    
-   
-
 }
