@@ -26,9 +26,6 @@ const cartArray = [
 ];
 
 
-// emailjs.send("","template_hizxb4z");
-// drBMNJbJPGwMfkSSr
-
 let newArray = [];
 
 formBtn = document.querySelector(".button-email");
@@ -36,10 +33,7 @@ formBtn = document.querySelector(".button-email");
 function showCartData(idx, btn) {
   // let itemIdex =   cartArray.indexOf(idx)
   console.log("data",btn);
-  return;
   let item = cartArray[idx];
-
-  // console.log(item, idx);
 
   if (!item.isadded) {
 
