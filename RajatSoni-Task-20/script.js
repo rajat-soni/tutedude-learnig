@@ -45,10 +45,10 @@ function showCartData(idx, btn) {
     
   } else {
 
-     item.isadded = false;
-    newArray = newArray.filter(
-        cartItem => cartItem !== item
-    );
+      item.isadded = false;
+      newArray = newArray.filter(
+      cartItem => cartItem !== item
+      );
 
     btn.innerHTML = " <div class='icon-1'>Add Item <i class='fa fa-plus-circle' style='font-size:14px;'></i> </div>";
      btn.style.backgroundColor = "#73c2fb";
